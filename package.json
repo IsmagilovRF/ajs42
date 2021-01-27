@@ -1,5 +1,5 @@
 {
-  "name": "ajs",
+  "name": "ajs42",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
   },
-  "author": "coursar",
+  "author": "IsmagilovRF",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
@@ -41,16 +41,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IsmagilovRF/ajs41.git"
+    "url": "git+https://github.com/IsmagilovRF/ajs42.git"
   },
   "bugs": {
-    "url": "https://github.com/IsmagilovRF/ajs41/issues"
+    "url": "https://github.com/IsmagilovRF/ajs42/issues"
   },
-  "homepage": "https://github.com/IsmagilovRF/ajs41#readme",
+  "homepage": "https://github.com/IsmagilovRF/ajs42#readme",
   "husky": {
     "hooks": {
       "pre-commit": "npm test"
     }
   },
-  "description": "ajs41  ДЗ41"
+  "description": "ajs42 ДЗ42"
 }

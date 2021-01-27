@@ -1,28 +1,17 @@
-import characterStatus from '../app';
+import sortByHealth from '../app';
 
-test('healthy', () => {
-  const character = {
-    name: 'Маг',
-    health: 90,
-  };
+test('sort', () => {
+  const input = [
+    { name: 'мечник', health: 10 },
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+  ];
 
-  expect(characterStatus(character)).toBe('healthy');
-});
+  const expected = [
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+    { name: 'мечник', health: 10 },
+  ];
 
-test('wounded', () => {
-  const character = {
-    name: 'Маг',
-    health: 30,
-  };
-
-  expect(characterStatus(character)).toBe('wounded');
-});
-
-test('critical', () => {
-  const character = {
-    name: 'Маг',
-    health: 1,
-  };
-
-  expect(characterStatus(character)).toBe('critical');
+  expect(sortByHealth(input)).toEqual(expected);
 });

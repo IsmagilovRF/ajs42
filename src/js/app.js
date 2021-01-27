@@ -1,13 +1,6 @@
 // TODO: write your code here
-export default function characterStatus(character) {
-  let status = '';
+// TODO: write your code here
 
-  if (character.health > 50) {
-    status = 'healthy';
-  } else if (character.health > 14 && character.health < 51) {
-    status = 'wounded';
-  } else if (character.health < 15) {
-    status = 'critical';
-  }
-  return status;
+export default function sortByHealth(array) {
+  return array.sort((first, second) => second.health - first.health);
 }
