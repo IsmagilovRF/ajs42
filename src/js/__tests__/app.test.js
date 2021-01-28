@@ -12,9 +12,7 @@ test('sort toEqual', () => {
     { name: 'лучник', health: 80 },
     { name: 'мечник', health: 10 },
   ];
-
   expect(sortByHealth(input)).toEqual(expected);
-
 });
 
 test('sort not.toBe', () => {
@@ -29,7 +27,5 @@ test('sort not.toBe', () => {
     { name: 'лучник', health: 80 },
     { name: 'мечник', health: 10 },
   ];
-
   expect(sortByHealth(input)).not.toBe(expected);
-
 });
